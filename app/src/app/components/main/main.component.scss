@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 700px;
+    .pokemon-list {
+      overflow: scroll;
+      flex-basis: 30%;
+      /* List */
+      ul {
+        counter-reset: index;
+        padding: 0;
+      }
+    
+      /* List element */
+      li {
+        counter-increment: index;
+        display: flex;
+        align-items: center;
+        padding: 12px 0;
+        box-sizing: border-box;
+        cursor: pointer;
+      }
+        
+      /* Element separation */
+      li + li {
+        border-top: 1px solid black;
+      }
+    }
+  }

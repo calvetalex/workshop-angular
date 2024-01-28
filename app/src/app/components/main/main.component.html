@@ -1,0 +1,12 @@
+<ng-container>
+    <h1>List of 151 first pokemon</h1>
+    <div class="container">
+        <div class="pokemon-list">
+            <ul>
+                <li *ngFor="let poke of pokemonList; let index = index">
+                    <p>N°{{index + 1}}, Name: {{ poke.name }}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</ng-container>
